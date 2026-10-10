@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión Gimnasios — Software de gestión para centros deportivos</title>
+  <meta name="description" content="Web, app móvil de reservas, automatización de pagos y panel de control para gimnasios, boxes y estudios de yoga y pilates." />
+  <link rel="icon" href="Sources/Logo.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <img src="Sources/logo-light.png" alt="Logo" class="brand__logo" />
+      </a>
+
+      <nav class="nav__links" id="menu">
+        <a href="#ventajas">Ventajas</a>
+        <a href="#setup">Puesta en marcha</a>
+        <a href="#planes">Planes</a>
+        <a href="#panel">Panel</a>
+        <a href="#condiciones">Condiciones</a>
+        <a href="#contacto" class="btn btn--sm btn--solid">Solicitar demo</a>
+      </nav>
+
+      <button class="nav__toggle" id="toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero wrap">
+      <p class="eyebrow">Solución digital para centros deportivos</p>
+      <h1 class="hero__title">Automatiza el <span class="mark">90%</span> del trabajo administrativo de tu centro.</h1>
+      <p class="hero__lead">Tus alumnos reservan desde el móvil en segundos y tú cobras las cuotas sin perseguir pagos a principio de mes.</p>
+      <div class="hero__cta">
+        <a href="#contacto" class="btn btn--solid">Solicitar demo</a>
+        <a href="#planes" class="btn btn--ghost">Ver planes</a>
+      </div>
+      <ul class="hero__tags">
+        <li>Web a tu marca</li>
+        <li>App de reservas</li>
+        <li>Cobros automáticos</li>
+        <li>Panel de control</li>
+      </ul>
+    </section>
+
+    <!-- VENTAJAS -->
+    <section class="section wrap" id="ventajas">
+      <p class="eyebrow">01 — Ventajas</p>
+      <h2 class="section__title">¿Qué consigue tu centro deportivo?</h2>
+      <div class="grid grid--2">
+        <article class="card card--soft">
+          <h3 class="card__kicker">Para la gestión del centro</h3>
+          <ul class="checklist">
+            <li><strong>Cero WhatsApps de reservas.</strong> Agenda 100% automatizada con límites de aforo.</li>
+            <li><strong>Cobro automático con tarjeta.</strong> Cuotas cobradas automáticamente el día 1 de cada mes.</li>
+            <li><strong>Reglas anti-plazas vacías.</strong> Política de cancelación y lista de espera automática.</li>
+            <li><strong>Panel de control.</strong> Ingresos, impagados y horas pico en tiempo real.</li>
+          </ul>
+        </article>
+        <article class="card card--soft">
+          <h3 class="card__kicker">Para tus alumnos</h3>
+          <ul class="checklist">
+            <li><strong>App en su móvil.</strong> Reservas y cancelaciones cómodas en 3 clics.</li>
+            <li><strong>Avisos y recordatorios.</strong> Notificaciones directas para no olvidar la clase.</li>
+            <li><strong>Transparencia.</strong> Consulta de bonos, pagos e historial de asistencia.</li>
+            <li><strong>Contenido exclusivo.</strong> Acceso a rutinas y planes en PDF (según plan).</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SETUP -->
+    <section class="section wrap" id="setup">
+      <p class="eyebrow">02 — Puesta en marcha</p>
+      <h2 class="section__title">Puesta en marcha e integración <span class="muted">(pago único)</span></h2>
+      <div class="grid grid--2">
+        <article class="card">
+          <header class="card__head">
+            <h3>Pack Setup Básico</h3>
+            <p class="price"><span>350€</span><small>pago único</small></p>
+          </header>
+          <ul class="checklist">
+            <li>Diseño web y app adaptada a tu marca y colores.</li>
+            <li>Configuración de horarios, salas, clases y límites de aforo.</li>
+            <li>Migración e importación masiva de tu lista actual de alumnos.</li>
+            <li>Capacitación del personal para el uso de la plataforma.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <header class="card__head">
+            <h3>Pack Setup Avanzado</h3>
+            <p class="price"><span>550€</span><small>pago único</small></p>
+          </header>
+          <ul class="checklist">
+            <li><em>Todo lo del Pack Básico.</em></li>
+            <li>Conexión de la pasarela de pago automático (Stripe).</li>
+            <li>Plantillas automáticas de avisos por WhatsApp/Email.</li>
+            <li>Sistema de captación de “clase de prueba gratuita” desde la web.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section class="section wrap" id="planes">
+      <p class="eyebrow">03 — Suscripción</p>
+      <h2 class="section__title">Planes mensuales</h2>
+      <div class="grid grid--3">
+
+        <article class="card plan">
+          <header class="card__head">
+            <h3>Plan Básico</h3>
+            <p class="price"><span>29€</span><small>/mes</small></p>
+            <p class="plan__tag">Gestión de reservas y aforos.</p>
+          </header>
+          <ul class="checklist">
+            <li>Web y App de reservas.</li>
+            <li>Control de aforos y listas de espera.</li>
+            <li>Notificaciones de confirmación por Email.</li>
+            <li>Soporte técnico estándar.</li>
+          </ul>
+          <a href="#contacto" class="btn btn--ghost btn--full">Empezar</a>
+        </article>
+
+        <article class="card plan plan--featured">
+          <p class="plan__flag">Más elegido</p>
+          <header class="card__head">
+            <h3>Plan Profesional</h3>
+            <p class="price"><span>59€</span><small>/mes</small></p>
+            <p class="plan__tag">Cobros automáticos y recordatorios.</p>
+          </header>
+          <ul class="checklist">
+            <li><em>Todo lo del Plan Básico.</em></li>
+            <li>Cobro automático de cuotas con tarjeta.</li>
+            <li>Gestión de bonos y pases sueltos.</li>
+            <li>Recordatorios de clase por WhatsApp.</li>
+            <li>Dashboard financiero y ocupación.</li>
+          </ul>
+          <a href="#contacto" class="btn btn--solid btn--full">Solicitar demo</a>
+        </article>
+
+        <article class="card plan">
+          <header class="card__head">
+            <h3>Plan Premium</h3>
+            <p class="price"><span>99€</span><small>/mes</small></p>
+            <p class="plan__tag">Analítica avanzada y fidelización VIP.</p>
+          </header>
+          <ul class="checklist">
+            <li><em>Todo lo del Plan Profesional.</em></li>
+            <li>Área privada de contenidos (rutinas / PDF).</li>
+            <li>Alertas automáticas de alumnos inactivos.</li>
+            <li>Solicitudes automáticas de reseñas en Google.</li>
+            <li>Soporte prioritario.</li>
+          </ul>
+          <a href="#contacto" class="btn btn--ghost btn--full">Solicitar demo</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PANEL -->
+    <section class="section wrap" id="panel">
+      <p class="eyebrow">04 — Centro de mando</p>
+      <h2 class="section__title">Panel de analítica para el dueño</h2>
+      <div class="table">
+        <div class="table__row table__row--head">
+          <span>Módulo</span>
+          <span>Información que verás</span>
+          <span>Inclusión</span>
+        </div>
+        <div class="table__row">
+          <span class="table__label">Control financiero</span>
+          <span>Ingresos mensuales garantizados (MRR), cobros con tarjeta y lista de cuotas impagadas.</span>
+          <span class="badge">59€ y 99€</span>
+        </div>
+        <div class="table__row">
+          <span class="table__label">Ocupación de clases</span>
+          <span>% de asistencia por disciplina, horas pico del centro y tasa de faltas sin avisar (No-shows).</span>
+          <span class="badge">59€ y 99€</span>
+        </div>
+        <div class="table__row">
+          <span class="table__label">Retención y bajas</span>
+          <span>Alerta de socios que llevan +10 días sin venir para enviarles un mensaje y evitar la baja.</span>
+          <span class="badge">99€</span>
+        </div>
+        <div class="table__row">
+          <span class="table__label">Reputación Google</span>
+          <span>Envío automático de peticiones de valoración de 5 estrellas a tus alumnos más satisfechos.</span>
+          <span class="badge">99€</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONDICIONES -->
+    <section class="section wrap" id="condiciones">
+      <p class="eyebrow">05 — Condiciones</p>
+      <h2 class="section__title">Claridad y transparencia</h2>
+      <div class="grid grid--3">
+        <article class="card card--soft">
+          <h3 class="card__kicker">Sin sorpresas en las cuotas</h3>
+          <p>Los cobros con tarjeta se procesan mediante tu propia cuenta de Stripe (comisión estándar bancaria de ~1,4% + 0,25€ por transacción).</p>
+        </article>
+        <article class="card card--soft">
+          <h3 class="card__kicker">Cancelación a tu medida</h3>
+          <p>Configuras el límite de horas para que un alumno cancele sin perder su plaza o clase.</p>
+        </article>
+        <article class="card card--soft">
+          <h3 class="card__kicker">Permanencia de 3 meses</h3>
+          <p>Solo solicitamos un compromiso de 3 meses para asegurar la correcta implantación y adaptación de tu equipo al software.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section wrap" id="contacto">
+      <div class="cta">
+        <div class="cta__copy">
+          <p class="eyebrow">Empecemos</p>
+          <h2 class="section__title">Digitaliza tu centro deportivo.</h2>
+          <p class="muted">Cuéntanos qué tipo de centro tienes y te preparamos una demo personalizada.</p>
+        </div>
+        <form class="form" id="form">
+          <label class="field">
+            <span>Nombre</span>
+            <input type="text" name="nombre" placeholder="Tu nombre" required />
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="tu@centro.com" required />
+          </label>
+          <label class="field">
+            <span>Tipo de centro</span>
+            <select name="tipo">
+              <option>Gimnasio</option>
+              <option>Box / CrossFit</option>
+              <option>Yoga o Pilates</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Mensaje</span>
+            <textarea name="mensaje" rows="3" placeholder="Cuéntanos brevemente tu caso"></textarea>
+          </label>
+          <button type="submit" class="btn btn--solid btn--full">Solicitar demo</button>
+          <p class="form__note" id="formNote" hidden>Gracias. Te contactaremos muy pronto.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <img src="Sources/logo-light.png" alt="Logo" class="footer__logo" />
+      <p class="muted">© <span id="year"></span> Gestión Gimnasios — Software de gestión deportivo.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
